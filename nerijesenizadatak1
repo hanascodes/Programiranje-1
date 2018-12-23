@@ -1,0 +1,46 @@
+/*
+Napišite program, poštujući sve faze procesa programiranja (analiza, specifikacija,
+dizajn, kod, validacija/testiranje), u kojem ćete omogući unos jednog malog slova
+engleske abecede. 
+
+Program treba ispisati neposrednog prethodnika i neposrednog
+sljedbenika slova kojeg je korisnik upisao preko tastature. 
+
+U slučaju da je korisnik
+napravio pogrešan unos (upisao karakter koji nije malo slovo) program treba ispisati
+odgovarajuću poruku. 
+
+Vodite računa da slovo a nema prethodnika, a slovo z nema
+sljedbenika. Upotrijebite uvjetni operator.
+*\
+
+#include<iostream>
+#include<cctype>
+using namespace std;
+//robust program
+int main()
+{
+  char slovo;
+
+  cout<<"Unesite slovo: \n";
+  cin>>slovo;
+
+  if (slovo>=97 && slovo<=122)
+  {
+    if(slovo>97)
+    {
+      cout<<"Prethodnik je: "<<char (slovo-1)<<"\n";
+    }
+    if(slovo<122)
+    {
+      cout<<"Sljedbenik je: "<<char (slovo+1)<<"\n";
+    }
+  }
+  else
+  {
+    cout<<"ERROR"<<"\n";
+  }
+
+  system("pause>0");
+  return 0;
+}
