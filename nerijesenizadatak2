@@ -1,0 +1,24 @@
+/*Napišite program, poštujući sve faze procesa programiranja, k
+koji će odrediti udaljenost
+između tačke A i tačke B u koordinatnom sistemu. 
+Koordinate tačaka A i B unosi korisnik
+preko tastature.
+Napomena: potrebne su vam matematičke funkcije koje se nalaze u datoteci zaglavlja
+<cmath> . Riječ je o fukcijama pow(_,_) i sqrt (_).*\
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+  float x1,y1,x2,y2;
+
+  cout<<"Unesi koordinate tacaka A i B. \n";
+  cin>>x1>>y1>>x2>>y2;
+
+  cout<<sqrt(pow((x2-x1),2)+pow((y2-y1),2))<<"\n";
+
+  system("pause>0");
+  return 0;
+}
